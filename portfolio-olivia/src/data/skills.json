@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title" : "HTML 5",
+        "icon": "/images/html5.svg"
+    },
+    {
+        "id": 1,
+        "title" : "HTML 5",
+        "icon": "/images/html5.svg"
+    },
+    {
+        "id": 2,
+        "title" : "CSS 3",
+        "icon": "/images/css3.svg"
+    },
+    {
+        "id": 3,
+        "title" : "PhP",
+        "icon": "/images/php.svg"
+    },
+    {
+        "id": 4,
+        "title" : "JavaScript",
+        "icon": "/images/javascript.svg"
+    },
+    {
+        "id": 5,
+        "title" : "React",
+        "icon": "/images/react.svg"
+    },
+    {
+        "id": 6,
+        "title" : "WordPress",
+        "icon": "/images/wordpress.svg"
+    }
+]

@@ -1,0 +1,33 @@
+@import './variables';
+
+.articles-projets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;   
+    }
+.articles-projets    article{
+    flex: 0 0 30%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    h4{
+        padding: 10px 0;
+    }
+    .liste-compet{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        li{
+            border: 1px solid var(--violet);
+            border-radius: 5px;
+            padding: 2px;
+        }
+        }
+        a{
+            color: var(--marron);
+            &:hover{
+                color: var(--violet);
+            }
+        }
+    }

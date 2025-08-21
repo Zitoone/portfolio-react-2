@@ -1,0 +1,54 @@
+@import './variables';
+
+body{
+    margin: 0;
+    font-family: $mainfont;
+}
+a, link, li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 16px;
+}
+h1, h2{
+    color: $violet;
+    font-family: $titlefont;
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--titlefont);
+    color: var(--violet);
+    padding-bottom: 40px;
+}
+.titre{
+    background-color: $marron;
+    padding: 50px;
+    text-align: center;
+}
+#page-about{
+    section{
+        padding: 50px 20px;
+        h2{
+            padding-bottom: 20px;
+        }
+        p{
+            margin: 10px 0;
+        }
+        img{
+            border: 1px solid var(--marron);
+            border-radius: 150px;}
+    }
+}
+.presentation{
+    div{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;  
+    }
+}

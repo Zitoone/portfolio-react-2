@@ -1,0 +1,33 @@
+@import './variables';
+
+header{
+    margin: auto;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .navbar{
+    display: flex;
+    }   
+    ul{
+        display: flex;
+        gap: 20px;
+    }
+    a:hover{
+        color:var(--violet);
+    }
+}
+
+footer{
+    margin: auto;
+    background-color: $violet;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+    a, h2{
+        color: white;
+    }
+}
