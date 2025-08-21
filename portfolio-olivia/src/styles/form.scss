@@ -1,0 +1,55 @@
+@import './variables';
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+
+  > div:first-child {
+    display: flex;
+    gap: 15px;
+    div {
+      flex: 1; // chaque input prend la moitié de la ligne
+      display: flex;
+      flex-direction: column;
+      label {
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+      input {
+        padding: 5px;
+        border: 1px solid;
+        border-radius: 4px;
+        font-size: 20px;
+      }
+    }
+  }
+  > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    label {
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+    textarea {
+      padding: 0.5rem;
+      border: 1px solid;
+      border-radius: 4px;
+      font-size: 20px;
+      min-height: 120px;
+    }
+  }
+  > div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+    }
+    label {
+      font-size: 15px;
+    }
+  }
+}

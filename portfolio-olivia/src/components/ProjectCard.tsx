@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps>=({title, description, image})=>(
                                 <li>CSS</li>
                             </ul>
                         </div>
-                        <Link to="#">Voir le projet →</Link>
+                        <Link to="#" className="plus">Voir le projet →</Link>
                     </div>             
                 </article>
 )

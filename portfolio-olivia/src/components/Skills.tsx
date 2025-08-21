@@ -6,7 +6,7 @@ type SkillsProps={
 const SkillCard: React.FC<SkillsProps>=({title, icon})=>(
     <article>
         <img src={icon} alt={title}/>
-        <h3>{title}</h3>
+        <h5>{title}</h5>
     </article>
 
 )

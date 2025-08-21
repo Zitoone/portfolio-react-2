@@ -7,6 +7,11 @@ import Footer from './components/Footer';
 import './styles/global.scss'
 import './styles/header-footer.scss'
 import './styles/projects.scss'
+import './styles/skills.scss'
+import './styles/form.scss'
+import './styles/contact.scss'
+import './styles/home.scss'
+import './styles/about.scss'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

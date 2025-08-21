@@ -1,0 +1,25 @@
+@import './variables';
+
+#page-about{
+    section{
+        padding: 50px 20px;
+        h2{
+            padding-bottom: 20px;
+        }
+    }
+}
+.presentation{
+    div{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;  
+    }
+    p{
+        padding: 50px;
+    }
+    img{
+        width: 20%;
+        border: 1px solid $marron;
+        border-radius: 150px;
+        }
+}

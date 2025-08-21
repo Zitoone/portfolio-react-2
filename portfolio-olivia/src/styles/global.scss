@@ -22,8 +22,8 @@ img{
 h3{
     text-align: center;
     font-size: 30px;
-    font-family: var(--titlefont);
-    color: var(--violet);
+    font-family: $titlefont;
+    color: $violet;
     padding-bottom: 40px;
 }
 .titre{
@@ -31,24 +31,27 @@ h3{
     padding: 50px;
     text-align: center;
 }
-#page-about{
-    section{
-        padding: 50px 20px;
-        h2{
-            padding-bottom: 20px;
-        }
-        p{
-            margin: 10px 0;
-        }
-        img{
-            border: 1px solid var(--marron);
-            border-radius: 150px;}
+.btn{
+    width: fit-content;
+    display: block;
+    padding: 8px 12px;
+    background-color: $marron;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+    &:hover{
+        background-color: $violet;
+        transform: scale(1.1);
     }
 }
-.presentation{
-    div{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 20px;  
+.plus{
+    color: $marron;
+    &:hover{
+        color: $violet;
     }
 }
+
+
+

@@ -1,0 +1,17 @@
+@import './variables';
+
+.articles-competences{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    article{
+        justify-items: center;
+        color: $violet;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 10%;
+    }
+}

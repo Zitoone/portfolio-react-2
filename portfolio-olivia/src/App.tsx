@@ -2,8 +2,8 @@ import {Routes, Route} from 'react-router-dom';
 import Home from './pages/Home.tsx';
 import Projects from './pages/Projects';
 import About from './pages/about.tsx'
-/* import Contact from './pages/Contact';
-import NotFound from './pages/NotFound'; */
+import Contact from './pages/Contact';
+/* import NotFound from './pages/NotFound'; */
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/projects" element={<Projects/>} />
       <Route path="/about" element={<About/>} />
+      <Route path="/contact" element={<Contact/>} />
 
     </Routes>    
   );
@@ -19,5 +20,5 @@ function App() {
 export default App;
 
       
-/*       <Route path="/contact" element={<Contact/>} />
-      <Route path="*" element={<NotFound/>} /> */
+      
+/*       <Route path="*" element={<NotFound/>} /> */

@@ -8,7 +8,7 @@ function Header(){
         </div>
             <nav className="navbar">
                 <ul>
-                    <li><NavLink to="/">Accueil</NavLink></li>
+                    <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Accueil</NavLink></li>
                     <li><NavLink to="/about">A propos</NavLink></li>
                     <li><NavLink to="/projects">Projets</NavLink></li>
                     <li><NavLink to="/contact">Contact</NavLink></li>
