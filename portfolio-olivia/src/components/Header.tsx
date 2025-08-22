@@ -1,12 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
+import { CiMenuBurger } from "react-icons/ci";
+import {useState} from "react";
 
 function Header(){
+    const[menuOpen, setMenuOpen]=useState(false);
     return(
         <header className="desktop">
         <div>
             <Link to="/"><h1>Olivia Nanquette</h1></Link>
         </div>
-            <nav className="navbar">
+        <div className="burger" onClick={()=>setMenuOpen(!menuOpen)}>
+            <CiMenuBurger />
+        </div>
+            <nav className={`navbar ${menuOpen ? "open" : ""}`}>
                 <ul>
                     <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Accueil</NavLink></li>
                     <li><NavLink to="/about">A propos</NavLink></li>

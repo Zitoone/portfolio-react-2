@@ -2,7 +2,6 @@
 
 .introduction{
     background-image: url("https://img.pikbest.com/wp/202348/mockup-device-isolated-mountain-in-3d-rendering-with-responsive-web-design-for-all-devices_9775198.jpg!w700wp");
-/*     background-repeat: no-repeat; */
     background-size: cover;
     color: white;
     #opacity{
@@ -11,7 +10,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: baseline;
-        padding: 100px;
+        padding: 50px;
     }
     #intro{
         h2{
@@ -19,7 +18,6 @@
         }
         p:nth-child(2){
             font-size: 20px;
-    /*         padding: 15px 0; */
         }
         p:nth-child(3){
             padding: 15px 0;
@@ -30,14 +28,13 @@
     }
     #introduction-picture{
         width: 200px;
-/*         margin: auto; */
         img{
             border: 4px solid white;
             border-radius: 100%;
         }
     }
 }
-/* Section 2 A propos */
+/* Section A propos */
     h4{
         font-size: 24px;
         font-family: $titlefont;
@@ -46,6 +43,9 @@
 
 .a-propos{
     padding: 50px 20px;
+    h4{
+        padding: 20px;
+        }
     .parcours-competences{
         display: flex;
         flex-direction: row;
@@ -56,6 +56,9 @@
             padding: 10px 0;
         }
     }
+    .competences{
+        margin: 0;
+    }
 }
 //Section Projets
 .projets p,
@@ -63,9 +66,24 @@
     justify-self: center;
 }
 .articles-projets{
-        padding: 30px;
-}
-//Section contact
-form{
     padding: 30px;
+    img{
+        height: 300px;
+    }
+}
+
+//Responsive
+@media screen and (max-width:1024px){
+    .a-propos .parcours-competences {
+    flex-direction: column;
+    }
+}
+
+@media screen and (max-width:720px){
+    .articles-competences{
+        display: block;
+    }
+    .articles-projets {
+    flex-direction: column;
+}
 }

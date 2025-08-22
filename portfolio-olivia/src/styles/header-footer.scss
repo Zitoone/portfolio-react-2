@@ -1,6 +1,7 @@
 @import './variables';
 
 header{
+    padding: 15px;
     margin: auto;
     max-width: 1440px;
     display: flex;
@@ -13,13 +14,21 @@ header{
     ul{
         display: flex;
         gap: 20px;
+        flex-direction: row;
+    }
+    &.open{
+        display: block;
     }
     nav a.active {
         color: $violet;
     }
 }
+.burger{
+    display: none;
+}
 
 footer{
+    max-width: 1440px;
     margin: auto;
     background-color: $violet;
     color: white;
@@ -31,3 +40,39 @@ footer{
         color: white;
     }
 }
+#social{
+    display: flex;
+    justify-content: space-around;
+}
+
+//Responsive phone
+@media screen and (max-width:720px){
+    .burger{
+        display: block;
+    }
+    header {
+    .navbar {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 20px;
+      text-align: center;
+      ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+      &.open {
+        display: block; 
+      }
+    }
+  }
+
+  footer{
+    display:block;
+    justify-items: center;
+}
+}
+

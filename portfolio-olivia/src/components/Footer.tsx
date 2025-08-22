@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-/* import {GithubIcon, LinkedinIcon } from "lucide-react"; */
 import { GithubIcon, LinkedinIcon } from "lucide-react";
 
 const Footer=()=>{
@@ -22,3 +21,5 @@ const Footer=()=>{
 }
 
 export default Footer;
+
+//Revoir les icones avec React Icons

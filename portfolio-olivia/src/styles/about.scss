@@ -23,3 +23,15 @@
         border-radius: 150px;
         }
 }
+
+@media screen and (max-width:720px){
+    .presentation div {
+        flex-direction: column;
+        img{
+            width: 50%;
+        }
+        p{
+            padding: 0;
+        }
+    }
+}

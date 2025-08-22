@@ -36,22 +36,20 @@ const About = ()=>{
                 </div>
             </section>
 
-
-
-        <section>
-        <div>
-            <h2>Mes compétences</h2>
-        </div>  
-        <div className="articles-competences">
-            {skills.map((skill)=>(
-                <SkillCard
-                    key={skill.id}
-                    title={skill.title}
-                    icon={skill.icon}/>
-            ))}
-        </div>   
-    </section>
-    </main>
+            <section>
+            <div>
+                <h2>Mes compétences</h2>
+            </div>  
+            <div className="articles-competences">
+                {skills.map((skill)=>(
+                    <SkillCard
+                        key={skill.id}
+                        title={skill.title}
+                        icon={skill.icon}/>
+                ))}
+            </div>   
+            </section>
+        </main>
         )
 };
 export default About;

@@ -3,6 +3,11 @@
 body{
     margin: 0;
     font-family: $mainfont;
+
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 a, link, li{
     text-decoration: none;
@@ -24,7 +29,6 @@ h3{
     font-size: 30px;
     font-family: $titlefont;
     color: $violet;
-    padding-bottom: 40px;
 }
 .titre{
     background-color: $marron;
